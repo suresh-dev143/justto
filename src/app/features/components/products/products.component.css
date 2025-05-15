@@ -1,0 +1,137 @@
+/* Product Page Styles */
+.product-page {
+    padding-top: 80px;
+  }
+  
+  /* Hero Section */
+  .app-hero {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+  
+  .app-hero-image {
+    max-height: 500px;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .rating-badge, .downloads-badge {
+    background: white;
+    padding: 8px 15px;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  /* Features Section */
+  .app-features {
+    background-color: white;
+  }
+  
+  .feature-card {
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+    color: #0d6efd;
+  }
+  
+  /* Screenshots */
+  .app-screenshots .carousel {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  
+  /* Pricing Section */
+  .pricing-card {
+    border-radius: 15px;
+  }
+  
+  .price-display {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0d6efd;
+  }
+  
+  .price-currency {
+    vertical-align: super;
+    font-size: 1.5rem;
+  }
+  
+  .price-period {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .feature-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .feature-list li {
+    margin-bottom: 10px;
+  }
+  
+  /* Testimonials */
+  .app-testimonials {
+    background: linear-gradient(135deg, #212529 0%, #343a40 100%);
+  }
+  
+  .testimonial-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.1);
+  }
+  
+  /* FAQ */
+  .accordion-button:not(.collapsed) {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,0.125);
+  }
+  
+  /* Animations */
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .app-hero {
+      text-align: center;
+      padding-top: 3rem;
+    }
+    
+    .download-buttons {
+      justify-content: center;
+    }
+    
+    .app-hero-image {
+      max-height: 350px;
+      margin-top: 2rem;
+    }
+  }
+  .caro-img{
+    width: 21rem;
+    height: auto;
+    margin: auto;
+  }

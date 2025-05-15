@@ -1,55 +1,58 @@
-<div class="min-h-screen flex flex-col">
-  <!-- Header -->
-  <header class="bg-gray-800 text-white p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">ShopTrend</h1>
-      <nav>
-        <ul class="flex space-x-6">
-          <li><a href="#" class="hover:text-gray-300">Home</a></li>
-          <li><a href="#" class="hover:text-gray-300">Products</a></li>
-          <li><a href="#" class="hover:text-gray-300">Cart</a></li>
-          <li><a href="#" class="hover:text-gray-300">Account</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="bg-gray-100 py-20">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-4">Welcome to ShopTrend</h2>
-      <p class="text-lg mb-6">Discover the latest trends in fashion, electronics, and more!</p>
-      <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Shop Now</a>
-    </div>
-  </section>
-
-  <!-- Featured Products Section -->
-  <section class="py-16">
-    <div class="container mx-auto">
-      <h3 class="text-3xl font-bold text-center mb-12">Featured Products</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div *ngFor="let product of products" class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img [src]="product.image" [alt]="product.name" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h4 class="text-xl font-semibold">{{ product.name }}</h4>
-            <p class="text-gray-600">{{ product.price }}</p>
-            <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-                    (click)="addToCart(product)">Add to Cart</button>
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+<footer class="footer bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="mb-3">JustTo</h5>
+          <p>Your favorite online shopping destination now in your pocket.</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/share/19Dv1Nzm71/" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/justtoservice?igsh=OWN2dGswMzNsMGhh" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/justto-services-010a25365?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="me-3 text-white"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fjusttoservices" class="text-white"><i class="fas fa-times"></i></a>
           </div>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class="mb-3">Shop</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-white-50">All Products</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Featured</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">New Arrivals</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Sale Items</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class="mb-3">About</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-white-50">Our Story</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Careers</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Terms</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="mb-3">Stay Updated</h5>
+          <p>Subscribe to our newsletter for app updates and special offers.</p>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Your email">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+          <small class="text-white-50">By subscribing you agree to our Privacy Policy</small>
+        </div>
+      </div>
+      <hr class="my-4 bg-secondary">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">&copy; 2025 JustTo. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0">
+            <a href="#" class="text-white-50 me-3">Terms of Service</a>
+            <a href="#" class="text-white-50">Privacy Policy</a>
+          </p>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-8">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2025 ShopTrend. All rights reserved.</p>
-      <div class="mt-4">
-        <a href="#" class="text-gray-300 hover:text-white mx-2">Privacy Policy</a>
-        <a href="#" class="text-gray-300 hover:text-white mx-2">Terms of Service</a>
-        <a href="#" class="text-gray-300 hover:text-white mx-2">Contact Us</a>
-      </div>
-    </div>
   </footer>
-</div>
+    
